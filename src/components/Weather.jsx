@@ -8,7 +8,7 @@ export default function Weather() {
 
     const API_KEY = '37a0ff4eed513516d6c5587a56af0e72'
     let params = useParams()
-    console.log(params);
+    // console.log(params);
     let zip = params.weatherId
 
     useEffect(() => {
@@ -35,7 +35,7 @@ export default function Weather() {
             </div>
             <div className="flex items-center">
                 <div className="flex-1 max-w-4x1 mx-auto p-10">
-                    <ul role="list" className="grid grid-cols-6 grid-rows-4 gap-8 grid-flow-row">
+                    <ul role="list" className="grid sm:grid-cols-3 md:grid-cols-6 grid-rows-4 gap-8 grid-flow-row">
                         {weatherData.map((weatherData, index) =>
                             <li key={index} className="rounded-lg shadow-lg p-3">
                                 <div className="justify-center min-w-0 flex-auto text-center items-center">
