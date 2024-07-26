@@ -40,7 +40,7 @@ export default function Weather() {
                             <li key={index} className="rounded-lg shadow-lg p-3">
                                 <div className="justify-center min-w-0 flex-auto text-center items-center">
                                     <p className="text-xs font-bold leading-6">{moment(weatherData.dt_txt).format('MM/D/YY hA')}</p>
-                                    <img alt="weather-icon" src={`http://openweathermap.org/img/wn/${weatherData.weather[0].icon}@2x.png`} className="h-12 w-12 mx-auto" />
+                                    <img alt="weather-icon" src={`https://openweathermap.org/img/wn/${weatherData.weather[0].icon}@2x.png`} className="h-12 w-12 mx-auto" />
                                     <h1 className="text-xl font-bold leading-6">{weatherData.main.temp.toFixed()} °F</h1>
                                     <p className="text-xs leading-6 text-gray-500">{weatherData.main.temp_min.toFixed()} °F | {weatherData.main.temp_max.toFixed()} °F</p>
                                     <p className="text-xs font-bold leading-6 uppercase">{weatherData.weather[0].description}</p>
