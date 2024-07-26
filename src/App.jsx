@@ -7,7 +7,6 @@ const App = () => {
 
   return (
     <div className="App text-black bg-white body-font m-5">
-
       <BrowserRouter>
         <Input />
         <Routes>
